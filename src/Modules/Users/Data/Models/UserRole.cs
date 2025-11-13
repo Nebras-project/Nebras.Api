@@ -1,4 +1,4 @@
-﻿namespace Users.Data.Models;
+﻿namespace Nebras.Api.Data.Models;
 
 public class UserRole
 {
