@@ -5,7 +5,7 @@ using Nebras.Api.Data.Models;
 
 namespace Nebras.Api.Data.DbContexts
 {
-    public class NebrasDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
+    public class NebrasDbContext : IdentityDbContext<ApplicationUser, ApplicationIdentityRole, Guid>
     {
         public DbSet<Student> Students { get; set; }
     }
