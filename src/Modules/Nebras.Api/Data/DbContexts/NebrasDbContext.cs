@@ -7,6 +7,6 @@ namespace Nebras.Api.Data.DbContexts
 {
     public class NebrasDbContext : IdentityDbContext<ApplicationUser, ApplicationIdentityRole, Guid>
     {
-        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentProfile> Students { get; set; }
     }
 }
