@@ -3,5 +3,6 @@
     public class StudentProfile
     {
         public Guid UserId { get; set; } = Guid.CreateVersion7();
+        public ApplicationUser User { get; set; }
     }
 }
