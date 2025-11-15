@@ -1,10 +1,16 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace Nebras.Api.Data.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser<Guid>
     {
-        public string Username { get; set; } = default!;
+        public ApplicationUser()
+        {
+            // Initialise new users with a time-ordered GUID v7
+            Id = Guid.CreateVersion7();
+        }
+
         public string? ProfileImage { get; set; }
     }
 }
