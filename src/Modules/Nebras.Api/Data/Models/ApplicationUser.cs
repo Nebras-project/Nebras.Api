@@ -12,5 +12,7 @@ namespace Nebras.Api.Data.Models
         }
 
         public string? ProfileImage { get; set; }
+
+        public StudentProfile Student { get; set; }
     }
 }
